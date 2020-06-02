@@ -1,0 +1,24 @@
+tip* - stan/kuca
+ponuda* - prodaja/iznajmljivanje
+lokacija* - grad/deo grada
+kvadratura*
+godina_izgradnje*
+povrsina_zemljista* (samo za kuce)
+spratnost* (samo za stanove)
+uknjizenost* - da/ne
+tip_grejanja*
+broj_soba*
+broj_kupatila*
+CENA*
+
+
+
+https://www.nekretnine.rs/stambeni-objekti/lista/po-stranici/10/stranica/2/
+
+https://www.nekretnine.rs/stambeni-objekti/stanovi/centar-mirijeva-id1587/NkXI-CLoYg5/
+https://www.nekretnine.rs/stambeni-objekti/stanovi/25-renoviran-kompletno-id1586/Nk5SrS9UUIc/
+https://www.nekretnine.rs/stambeni-objekti/stanovi/komforna-garsonjera-u-modernoj-zgradi/NkN4oLtzXMG/
+https://www.nekretnine.rs/stambeni-objekti/stanovi/nova-ponuda-uknjizena-garsonjera-na-prvom-spratu-u-ustanickoj-ulici/NkWoG4LSrUX/
+https://www.nekretnine.rs/stambeni-objekti/stanovi/vracar-hram-nebojsina-120m2-sa-velikim-parking-mestom-u-garazi-zgrade-novo-lux/Nk0ETChTCec/
+https://www.nekretnine.rs/stambeni-objekti/stanovi/zemun-altina-15-soban-27m2-uknjizeno/NkYAgv9g6ef/
+https://www.nekretnine.rs/stambeni-objekti/kuce/senjak-temisvarska-lux-kuca-260m2-plac-4-ara/NkfYJiRDz1z/
