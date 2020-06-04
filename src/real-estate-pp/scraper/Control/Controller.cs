@@ -44,7 +44,7 @@ namespace scraper
 
 		public static async Task Run()
 		{
-			var crawler = new Crawler(1, 100);
+			var crawler = new Crawler(101, 200);
 			crawler.PageCompleted += PageCompleted;
 			crawler.PageError += PageError;
 			Console.WriteLine("Running crawler . . .");

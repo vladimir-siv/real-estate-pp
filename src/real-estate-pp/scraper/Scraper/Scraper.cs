@@ -21,7 +21,7 @@ namespace scraper
 
 			var estate = new RealEstate
 			{
-				Description = driver.FindElementByXPath(DescriptionXPath).Text.Trim(),
+				Description = driver.FindElementByXPath(DescriptionXPath)?.Text?.Trim(),
 				Price = driver.FindElementByXPath(PriceXPath).Text.Split(',')[0].ToPrice(),
 				Properties = new List<Property>()
 			};
