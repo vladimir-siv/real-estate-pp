@@ -15,6 +15,8 @@ namespace scraper
 
 		public Scraper Scraper { get; private set; } = new Scraper();
 
+		public event Action<int, IReadOnlyList<RealEstate>> PageCompleted;
+
 		public Crawler(int from, int to)
 		{
 			if (from <= 0 || to <= 0 || from > to) throw new ArgumentException("'From' and 'To' cannot be 0 and 'From' must be less than or equal to 'To'.");
@@ -22,16 +24,18 @@ namespace scraper
 			To = to;
 		}
 
-		public async Task<List<RealEstate>> Run()
+		public async Task Run()
 		{
-			return await Task.Run(() =>
+			await Task.Run(() =>
 			{
 				var driver = AppContext.Resolve<ChromeDriver>();
 				var links = new List<string>(20);
-				var estates = new List<RealEstate>(20 * (To - From + 1));
+				var estates = new List<RealEstate>(20);
 
 				for (var i = From; i <= To; ++i)
 				{
+					estates.Clear();
+
 					driver.Navigate().GoToUrl($"https://www.nekretnine.rs/stambeni-objekti/lista/po-stranici/10/stranica/{i}/");
 					
 					links.Clear();
@@ -43,9 +47,9 @@ namespace scraper
 						var estate = Scraper.Scrape(link);
 						estates.Add(estate);
 					}
-				}
 
-				return estates;
+					PageCompleted?.Invoke(i, estates);
+				}
 			});
 		}
 	}
