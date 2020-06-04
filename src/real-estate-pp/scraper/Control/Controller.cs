@@ -36,10 +36,17 @@ namespace scraper
 			Console.WriteLine($"Page {page} completed.");
 		}
 
+		private static void PageError(int page, Exception ex)
+		{
+			Console.WriteLine($"An error occured on page {page}.");
+			ex.Dump();
+		}
+
 		public static async Task Run()
 		{
 			var crawler = new Crawler(1, 100);
 			crawler.PageCompleted += PageCompleted;
+			crawler.PageError += PageError;
 			Console.WriteLine("Running crawler . . .");
 			await crawler.Run();
 			Console.WriteLine("Crawler done!");

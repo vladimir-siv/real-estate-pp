@@ -61,6 +61,7 @@
     <Compile Include="Crawler\Crawler.cs" />
     <Compile Include="Dependency\AppContext.cs" />
     <Compile Include="Dependency\App.cs" />
+    <Compile Include="Extensions\Logging.cs" />
     <Compile Include="Extensions\Parsing.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -16,6 +16,7 @@ namespace scraper
 		public Scraper Scraper { get; private set; } = new Scraper();
 
 		public event Action<int, IReadOnlyList<RealEstate>> PageCompleted;
+		public event Action<int, Exception> PageError;
 
 		public Crawler(int from, int to)
 		{
@@ -34,21 +35,25 @@ namespace scraper
 
 				for (var i = From; i <= To; ++i)
 				{
-					estates.Clear();
-
-					driver.Navigate().GoToUrl($"https://www.nekretnine.rs/stambeni-objekti/lista/po-stranici/10/stranica/{i}/");
-					
-					links.Clear();
-					foreach (var offer in driver.FindElementsByXPath(OfferXPath))
-						links.Add(offer.GetAttribute("href"));
-
-					foreach (var link in links)
+					try
 					{
-						var estate = Scraper.Scrape(link);
-						estates.Add(estate);
-					}
+						estates.Clear();
 
-					PageCompleted?.Invoke(i, estates);
+						driver.Navigate().GoToUrl($"https://www.nekretnine.rs/stambeni-objekti/lista/po-stranici/10/stranica/{i}/");
+
+						links.Clear();
+						foreach (var offer in driver.FindElementsByXPath(OfferXPath))
+							links.Add(offer.GetAttribute("href"));
+
+						foreach (var link in links)
+						{
+							var estate = Scraper.Scrape(link);
+							estates.Add(estate);
+						}
+
+						PageCompleted?.Invoke(i, estates);
+					}
+					catch (Exception ex) { PageError?.Invoke(i, ex); }
 				}
 			});
 		}
