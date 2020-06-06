@@ -1,9 +1,9 @@
 ﻿using System;
 using repplib;
 
-namespace scraper
+namespace analyzer
 {
-	public static class Program
+	public class Program
 	{
 		private static void Main(string[] args)
 		{

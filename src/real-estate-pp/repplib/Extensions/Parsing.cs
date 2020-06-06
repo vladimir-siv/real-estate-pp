@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace scraper
+namespace repplib
 {
 	public static class Parsing
 	{

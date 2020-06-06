@@ -4,6 +4,8 @@ using System.Threading.Tasks;
 using OpenQA.Selenium.Chrome;
 using RealEstates.Models;
 
+using AppContext = repplib.AppContext;
+
 namespace scraper
 {
 	public class Crawler

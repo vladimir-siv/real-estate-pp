@@ -5,12 +5,15 @@ using System.Threading.Tasks;
 using RealEstates.Models;
 
 using dbdriver;
+using repplib;
+
+using AppContext = repplib.AppContext;
 
 namespace scraper
 {
 	public static class Controller
 	{
-		private static void Dump(List<RealEstate> estates)
+		private static void Dump(IReadOnlyList<RealEstate> estates)
 		{
 			Console.WriteLine($"{Environment.NewLine}\t\t=== Dumping Estates [{estates.Count}] ===");
 
@@ -44,7 +47,7 @@ namespace scraper
 
 		public static async Task Run()
 		{
-			var crawler = new Crawler(101, 200);
+			var crawler = new Crawler(1, 1000);
 			crawler.PageCompleted += PageCompleted;
 			crawler.PageError += PageError;
 			Console.WriteLine("Running crawler . . .");

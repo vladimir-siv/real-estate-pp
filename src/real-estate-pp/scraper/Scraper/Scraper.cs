@@ -3,6 +3,9 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
 using RealEstates.Models;
+using repplib;
+
+using AppContext = repplib.AppContext;
 
 namespace scraper
 {

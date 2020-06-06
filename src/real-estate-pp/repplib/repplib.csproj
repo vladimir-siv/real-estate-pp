@@ -5,19 +5,18 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{536BA3AD-1951-45B8-A349-C0034135C772}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>scraper</RootNamespace>
-    <AssemblyName>scraper</AssemblyName>
+    <ProjectGuid>{E5F2D90A-23BF-494B-8FDF-43C5B4AD4E17}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>repplib</RootNamespace>
+    <AssemblyName>repplib</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -27,7 +26,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -57,28 +55,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Control\Controller.cs" />
-    <Compile Include="Crawler\Crawler.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Dependency\App.cs" />
+    <Compile Include="Dependency\AppContext.cs" />
+    <Compile Include="Extensions\Logging.cs" />
+    <Compile Include="Extensions\Parsing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Scraper\Scraper.cs" />
-    <Compile Include="Tests\Tests.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\dbdriver\dbdriver.csproj">
       <Project>{12d3a8a5-ca7c-42fa-ae21-f98895441579}</Project>
       <Name>dbdriver</Name>
     </ProjectReference>
-    <ProjectReference Include="..\repplib\repplib.csproj">
-      <Project>{e5f2d90a-23bf-494b-8fdf-43c5b4ad4e17}</Project>
-      <Name>repplib</Name>
-    </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Selenium.WebDriver.ChromeDriver.83.0.4103.3900\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.ChromeDriver.83.0.4103.3900\build\Selenium.WebDriver.ChromeDriver.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

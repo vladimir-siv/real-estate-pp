@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace scraper
+namespace repplib
 {
 	public static class AppContext
 	{
