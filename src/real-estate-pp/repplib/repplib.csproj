@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Dependency\App.cs" />
     <Compile Include="Dependency\AppContext.cs" />
+    <Compile Include="Extensions\Collections.cs" />
     <Compile Include="Extensions\Logging.cs" />
     <Compile Include="Extensions\Parsing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
