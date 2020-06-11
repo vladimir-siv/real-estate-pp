@@ -10,7 +10,7 @@ namespace scraper
 			App.Init();
 			try { Controller.Run().Wait(); }
 			catch (Exception ex) { ex.Dump(); }
-			App.Dispose();
+			finally { App.Dispose(); }
 			Console.WriteLine($"{Environment.NewLine}Press any key to exit . . .");
 			Console.ReadKey(true);
 		}

@@ -1,6 +1,6 @@
 SELECT TOP 1 * FROM [RealEstates]
 SELECT TOP 1 * FROM [Properties]
-SELECT DISTINCT [Name] FROM [Properties]
+SELECT DISTINCT [Name] FROM [Properties] ORDER BY [Name]
 
 SELECT P1.[Value], COUNT(P1.[Value]) FROM [Properties] P1
 JOIN [Properties] P2 ON P1.RealEstate_ID = P2.RealEstate_ID
