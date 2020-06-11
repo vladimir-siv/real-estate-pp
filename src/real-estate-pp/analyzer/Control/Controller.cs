@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
 
+using repplib;
+
 namespace analyzer
 {
 	public static class Controller

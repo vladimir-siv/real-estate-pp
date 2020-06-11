@@ -1,4 +1,4 @@
-﻿namespace analyzer
+﻿namespace repplib
 {
 	public enum Category
 	{

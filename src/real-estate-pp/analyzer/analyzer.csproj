@@ -57,8 +57,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Categories\Category.cs" />
-    <Compile Include="Categories\CategoryClassifier.cs" />
     <Compile Include="Control\Controller.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

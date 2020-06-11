@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace analyzer
+namespace repplib
 {
 	public static class CategoryClassifier
 	{

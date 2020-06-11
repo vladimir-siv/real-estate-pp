@@ -55,6 +55,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Categories\Category.cs" />
+    <Compile Include="Categories\CategoryClassifier.cs" />
     <Compile Include="Dependency\App.cs" />
     <Compile Include="Dependency\AppContext.cs" />
     <Compile Include="Extensions\Collections.cs" />
