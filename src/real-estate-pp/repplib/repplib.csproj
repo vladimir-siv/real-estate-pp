@@ -61,6 +61,7 @@
     <Compile Include="Dependency\AppContext.cs" />
     <Compile Include="Extensions\Collections.cs" />
     <Compile Include="Extensions\Logging.cs" />
+    <Compile Include="Extensions\Math2.cs" />
     <Compile Include="Extensions\Parsing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

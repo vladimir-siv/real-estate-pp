@@ -12,3 +12,6 @@ WHERE [Name] = 'Kategorija' --'Kategorija Uknjiženo'
 
 SELECT DISTINCT [Value] FROM [Properties]
 WHERE [Name] = 'Zemlja'
+
+SELECT DISTINCT [Value] FROM [Properties]
+WHERE [Name] = 'Godina izgradnje'

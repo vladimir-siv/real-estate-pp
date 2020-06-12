@@ -21,7 +21,7 @@ namespace visualizer
 				on p1.RealEstate.ID equals p2.RealEstate.ID
 				where p1.Name == "Grad" && p1.Value == city && p2.Name == "Deo Grada"
 				group p2 by p2.Value into g
-				orderby g.Count()
+				orderby g.Count() descending
 				select new { Part = g.Key, Count = g.Count() };
 
 			foreach (var part in parts.Take(count).ToList()) yield return (part.Part, part.Count);
@@ -65,7 +65,7 @@ namespace visualizer
 				from pr in DB.Properties
 				where pr.Name == "Grad"
 				group pr by pr.Value into g
-				orderby g.Count()
+				orderby g.Count() descending
 				select g.Key;
 
 			foreach (var city in cities.Take(countOfCities).ToList())
