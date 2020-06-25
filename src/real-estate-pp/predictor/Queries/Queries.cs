@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 
+using RealEstates.Models;
+
 using dbdriver;
 using repplib;
 
@@ -13,14 +15,19 @@ namespace predictor
 	{
 		private static readonly RealEstateModel DB = AppContext.Resolve<RealEstateModel>();
 
-		public static int CountOfSales()
+		public static List<RealEstate> GetData()
 		{
-			var sales =
-				from p in DB.Properties
-				where p.Name == "Transakcija" && p.Value == "Prodaja"
-				select p.ID;
+			var results = new List<RealEstate>();
 
-			return sales.Count();
+			var query =
+				from re in DB.RealEstates
+				select re;
+
+			foreach (var estate in query.ToList())
+				if (estate.Has("Grad", "Beograd"))
+					results.Add(estate);
+
+			return results;
 		}
 	}
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using RealEstates.Models;
 
 namespace repplib
 {
@@ -18,6 +19,16 @@ namespace repplib
 			}
 
 			return result;
+		}
+
+		public static bool Has(this RealEstate @this, string name, string value)
+		{
+			return @this.Properties.Find(p => p.Name == name)?.Value == value;
+		}
+
+		public static string Get(this RealEstate @this, string name)
+		{
+			return @this.Properties.Find(p => p.Name == name)?.Value;
 		}
 	}
 }

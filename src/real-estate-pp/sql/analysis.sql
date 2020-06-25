@@ -18,3 +18,7 @@ WHERE [Name] = 'Zemlja'
 
 SELECT DISTINCT [Value] FROM [Properties]
 WHERE [Name] = 'Godina izgradnje'
+
+SELECT DISTINCT P1.[Value] FROM [Properties] P1
+JOIN [Properties] P2 on P1.RealEstate_ID = P2.RealEstate_ID
+WHERE P1.[Name] = 'Okrug' AND P2.[Name] = 'Grad' AND P2.[Value] = 'Beograd'
