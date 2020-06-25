@@ -20,6 +20,7 @@ namespace repplib
 			AppContext.Inject(driver);
 
 			var db = new RealEstateModel();
+			db.Database.CommandTimeout = 180;
 			AppContext.Inject(db);
 		}
 

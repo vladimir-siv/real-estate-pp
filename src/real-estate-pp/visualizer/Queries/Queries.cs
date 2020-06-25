@@ -82,8 +82,20 @@ namespace visualizer
 
 				var counts = snr.ToList();
 
-				var sales = counts[0].Type == "Prodaja" ? counts[0].Count : counts[1].Count;
-				var rents = counts[0].Type == "Prodaja" ? counts[1].Count : counts[0].Count;
+				var sales = 0;
+				var rents = 0;
+
+				switch (counts.Count)
+				{
+					case 1:
+						sales = counts[0].Type == "Prodaja" ? counts[0].Count : 0;
+						rents = counts[0].Type == "Prodaja" ? 0 : counts[0].Count;
+						break;
+					case 2:
+						sales = counts[0].Type == "Prodaja" ? counts[0].Count : counts[1].Count;
+						rents = counts[0].Type == "Prodaja" ? counts[1].Count : counts[0].Count;
+						break;
+				}
 
 				yield return (city, sales, rents);
 			}
