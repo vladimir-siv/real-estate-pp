@@ -1,3 +1,6 @@
+--UPDATE [Properties] SET [Name] = 'Ukupan broj spratova' WHERE [Name] LIKE 'Ukupan%spratova'
+SELECT COUNT(*) FROM [RealEstates]
+
 SELECT TOP 1 * FROM [RealEstates]
 SELECT TOP 1 * FROM [Properties]
 SELECT DISTINCT [Name] FROM [Properties] ORDER BY [Name]

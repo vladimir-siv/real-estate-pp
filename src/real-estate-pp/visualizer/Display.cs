@@ -82,7 +82,7 @@ namespace visualizer
 				("50.000-99.999 €", 0),
 				("100.000-149.999 €", 0),
 				("150.000-199.999 €", 0),
-				("200.000€+", 0),
+				("200.000+ €", 0),
 			};
 			foreach (var price in Queries.SalesByPrice())
 			{

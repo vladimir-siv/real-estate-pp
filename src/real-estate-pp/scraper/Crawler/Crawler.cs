@@ -14,17 +14,19 @@ namespace scraper
 		
 		public int From { get; private set; }
 		public int To { get; private set; }
+		public int Order { get; private set; }
 
 		public Scraper Scraper { get; private set; } = new Scraper();
 
 		public event Action<int, IReadOnlyList<RealEstate>> PageCompleted;
 		public event Action<int, Exception> PageError;
 
-		public Crawler(int from, int to)
+		public Crawler(int from, int to, int order = 2)
 		{
 			if (from <= 0 || to <= 0 || from > to) throw new ArgumentException("'From' and 'To' cannot be 0 and 'From' must be less than or equal to 'To'.");
 			From = from;
 			To = to;
+			Order = order;
 		}
 
 		public async Task Run()
@@ -41,7 +43,8 @@ namespace scraper
 					{
 						estates.Clear();
 
-						driver.Navigate().GoToUrl($"https://www.nekretnine.rs/stambeni-objekti/lista/po-stranici/10/stranica/{i}/");
+						//driver.Navigate().GoToUrl($"https://www.nekretnine.rs/stambeni-objekti/lista/po-stranici/10/stranica/{i}/?order={Order}");
+						driver.Navigate().GoToUrl($"https://www.nekretnine.rs/stambeni-objekti/kuce/lista/po-stranici/10/stranica/{i}/");
 
 						links.Clear();
 						foreach (var offer in driver.FindElementsByXPath(OfferXPath))
