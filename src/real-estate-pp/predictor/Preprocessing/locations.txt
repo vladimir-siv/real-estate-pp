@@ -1,0 +1,242 @@
+29. Novembra									1.4
+Ada Ciganlija									6.8
+Altina											13.7
+Andrićev venac									0.9
+Autokomanda										3.8
+Avala											5.0
+Bajlonijeva pijaca								0.65
+Banjica											6.7
+Banovo brdo										7.3
+Barajevo										33.9
+Batajnica										22.9
+Bele vode										11.6
+Beli potok										19.0
+Belvil											6.2
+Beograd na vodi									2.7
+Beograđanka ( centar )							1.1
+Bežanija										8.3
+Bežanijska kosa I								8.2
+Bežanijska kosa II								8.6
+Bežanijska kosa III								8.1
+Bogoslovija										2.9
+Borča I											10.5
+Borča II										10.8
+Borča III										11.6
+Borča IV										11.3
+Borča V											11.3
+Botanička bašta									1.3
+Braće Jerković									6.6
+Bulbuder										3.8
+Bulevar Kr. Aleksandra							5.6
+Centar (uži)									0
+Cerak											10.7
+Cerak vinogradi									12.5
+Crveni krst										3.7
+Čubura											3.0
+Čukarica										6.9
+Čukarička padina								7.3
+Cvetanova ćuprija								9.9
+Cvetkova pijaca									4.6
+Cvetni trg										1.3
+Cvijićeva										1.9
+Dedinje (25. maj)								5.7
+Dedinje (Beli dvor)								6.2
+Dedinje (RTV Pink)								5.4
+Denkova bašta									5.3
+Đeram pijaca									3.2
+Dobanovci										23.6
+Donji Dorćol									1.5
+Dunavski kej									2.0
+Dušanovac										5.5
+Farmaceutski fakultet							8.9
+Filmski grad									11.2
+Galenika										13.5
+Glumčevo brdo									29.1
+Golf naselje									8.7
+Gornji Dorćol									1.5
+Gradska bolnica									4.2
+Grocka											29.1
+Gundulićev venac								0.9
+Hadžipopovac									2.8
+Hala Pionir										2.4
+Ibarska magistrala								14.4
+Institut za majku i dete						8.2
+Jajinci											9.4
+Julino brdo										9.6
+Južni bulevar									3.4
+Kalemegdan										2.1
+Kalenić pijaca									2.7
+Kaluđerica										13.3
+Kanarevo brdo									8.1
+Karaburma										4.1
+Klinički centar									2.2
+Kluz											9.0
+Knez Mihajlova ( centar )						0
+Kneza Miloša ( centar )							1.0
+Kneževac										12.2
+Konjarnik										6.3
+Kopitareva gradina								0.9
+Kosančićev venac								1.1
+Košutnjak										10.1
+Kotež											7.6
+Krnjača											6.8
+Kumodraž I										10.5
+Kumodraž II										8.7
+Labudovo brdo									13.4
+Ledine											11.4
+Lekino brdo										4.5
+Leštane											17.8
+Lion											3.7
+Lipov lad										4.0
+Lipovačka šuma									26.0
+Lisičji jarak									16.6
+Lisičji potok									7.2
+Makiš											11.7
+Mali mokri lug									7.9
+Manjež											1.3
+Marinkova bara									7.6
+Medak padina									8.6
+Medaković I										7.4
+Medaković II									6.9
+Medaković III									6.9
+Miljakovac I									9.4
+Miljakovac II									9.2
+Miljakovac III									9.7
+Mirijevo I										8.5
+Mirijevo II										7.4
+Mirijevo III									8.1
+Mirijevo IV										8.7
+Neimar											2.9
+Novi Beograd									8.2
+Novi Beograd Blok 1 (Fontana)					5.0
+Novi Beograd Blok 10							4.7
+Novi Beograd Blok 11 (Hotel Jugoslavija)		4.7
+Novi Beograd Blok 11a (Opština NBG)				4.9
+Novi Beograd Blok 11b							5.0
+Novi Beograd Blok 11c (Stari Merkator)			5.2
+Novi Beograd Blok 12 (YUBC)						4.6
+Novi Beograd Blok 19 (Sava Centar)				4.0
+Novi Beograd Blok 19a							4.3
+Novi Beograd Blok 2								5.2
+Novi Beograd Blok 20 (Hotel Hayat)				3.3
+Novi Beograd Blok 21 (10. Gimnazija)			2.9
+Novi Beograd Blok 22							3.4
+Novi Beograd Blok 23							4.0
+Novi Beograd Blok 24 (Super Vero)				4.7
+Novi Beograd Blok 25 (Arena)					4.1
+Novi Beograd Blok 28 (Potkovica)				5.4
+Novi Beograd Blok 29							4.4
+Novi Beograd Blok 3								5.7
+Novi Beograd Blok 30 (B92)						4.2
+Novi Beograd Blok 31 (Merkator)					4.5
+Novi Beograd Blok 33 (Genex kula)				5.2
+Novi Beograd Blok 34 (Studentski grad)			5.9
+Novi Beograd Blok 37							7.3
+Novi Beograd Blok 38 (OŠ Ratko Mitrović)		6.1
+Novi Beograd Blok 4 (Politehnička akademija)	5.9
+Novi Beograd Blok 44 (Piramida)					7.8
+Novi Beograd Blok 45 (TC Enjub)					8.5
+Novi Beograd Blok 49							8.2
+Novi Beograd Blok 5								5.6
+Novi Beograd Blok 61							9.0
+Novi Beograd Blok 62							8.4
+Novi Beograd Blok 63							8.5
+Novi Beograd Blok 64							7.1
+Novi Beograd Blok 65							6.5
+Novi Beograd Blok 66 (Tramvajska štala)			6.6
+Novi Beograd Blok 67							6.2
+Novi Beograd Blok 67a							6.2
+Novi Beograd Blok 7 (Paviljoni)					6.1
+Novi Beograd Blok 70 (Kineski TC)				7.0
+Novi Beograd Blok 70a							6.3
+Novi Beograd Blok 71							9.1
+Novi Beograd Blok 72							8.9
+Novi Beograd Blok 8a							5.9
+Novi Beograd Blok 8a (Paviljoni)				5.9
+Novi Beograd Blok 9								5.8
+Novi Beograd Blok 9a (Dom Zdravlja)				5.2
+Novo groblje									2.7
+Obilićev venac									1.0
+Olimp											5.0
+Ostružnica										19.2
+Ovča											13.0
+Padinska skela									24.4
+Palata pravde									2.0
+Palilula										1.3
+Palilulska pijaca								1.0
+Partizanov stadion								4.2
+Pašino brdo										4.6
+Petlovo brdo									13.3
+Plavi Horizonti									13.6
+Politika ( centar )								0.35
+Poštanska štedionica							8.4
+Pregrevica										8.5
+Profesorska kolonija							1.8
+Radiofar										16.2
+Rakovica										10.7
+Resnik											15.2
+Retenzija										5.7
+Rospi ćuprija									5.3
+Rušanj											20.2
+Sarajevska										2.0
+Sava mala										1.0
+Savski trg										1.6
+Savski venac									4.8
+Senjak											4.7
+Severni bulevar									3.2
+Skadarlija										0.4
+Skojevsko naselje								11.0
+Slavija											1.7
+Slavujev venac									3.0
+Sopot											43.0
+Sremčica										21.5
+Stari Grad										0.35
+Studentski Trg ( centar )						1.0
+Šumice											5.2
+Sunčana padina									8.5
+Surčin											18.2
+Tašmajdan										1.0
+Tehnicki fakulteti								2.1
+Terazije ( centar )								0.5
+Topčider										5.3
+Topličin venac									1.0
+Tošin bunar										6.8
+Trg Republike ( centar )						0
+Trošarina										6.8
+Učiteljsko naselje								5.9
+Veliki mokri lug								10.4
+Veljko Vlahović									18.6
+Vidikovac										12.2
+Vidikovačka padina								12.2
+Viline vode										2.3
+Vinča											14.7
+Višnjica										7.9
+Višnjička banja									6.2
+Vojvode Vlahovića								9.0
+Voždovac										5.0
+Vračar (Centar)									2.7
+Vračar (Hram)									2.3
+Vukov spomenik									2.8
+Žarkovo											9.3
+Zeleni venac									0.85
+Zeleno Brdo										5.9
+Železnik										16.3
+Zemun (Bačka)									12.7
+Zemun (Cara Dušana)								8.5
+Zemun (Centar)									23.0
+Zemun (Ćukovac)									7.4
+Zemun (Gardoš)									7.4
+Zemun (Gornji grad)								9.6
+Zemun (Kalvarija)								8.1
+Zemun (Kej)										6.3
+Zemun (Marije Bursać)							8.7
+Zemun (Meandri)									8.7
+Zemun (Nova Galenika)							13.5
+Zemun (Novi Grad)								10.9
+Zemun (Save Kovačevića)							8.2
+Zemun (Teleoptik)								8.5
+Zemun Polje										16.5
+Zira											2.5
+Zvezdara										3.9
+Zvezdarska Šuma									5.4
+Zvezdin stadion									4.2

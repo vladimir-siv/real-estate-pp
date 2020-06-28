@@ -30,7 +30,7 @@ namespace predictor
 			}
 
 			Console.WriteLine("Training linear regressor . . .");
-			lr.Train(LinearRegressor.MSE, 1e-6, 100);
+			lr.Train(LinearRegressor.MSE, 1e-6, 10000);
 
 			Console.WriteLine("Test\t\tTrue\t\t\tPredicted");
 			for (var i = train; i < data.Count; ++i)
