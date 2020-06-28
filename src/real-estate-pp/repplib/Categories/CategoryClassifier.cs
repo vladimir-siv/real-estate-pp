@@ -8,7 +8,9 @@ namespace repplib
 		{
 			"Duplex kuće",
 			"Porodična kuća",
-			"Kuće sa više stanova"
+			"Kuće sa više stanova",
+			"Baštenska kućica / Zimovnik",
+			"Kuće"
 		};
 		private static readonly string[] appartments = new[]
 		{
@@ -24,7 +26,8 @@ namespace repplib
 		{
 			"Sobe",
 			"Ostali tipovi prostora",
-			"Garaže i parking mesta"
+			"Garaže i parking mesta",
+			"Skladišta/ Ostave"
 		};
 
 		private static HashSet<string> houseCategory = new HashSet<string>(houses);

@@ -24,8 +24,19 @@ namespace predictor
 				select re;
 
 			foreach (var estate in query.ToList())
-				if (estate.Has("Grad", "Beograd"))
+			{
+				if
+				(
+					estate.Has("Grad", "Beograd")
+					&&
+					estate.Get("Kategorija").ToCategory() == repplib.Category.Appartment
+					&&
+					estate.Has("Transakcija", "Prodaja")
+				)
+				{
 					results.Add(estate);
+				}
+			}
 
 			return results;
 		}
